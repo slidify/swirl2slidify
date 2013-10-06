@@ -1,0 +1,11 @@
+--- &interactive
+
+{{{ q.output }}}
+
+```{r opts.label = 'interactive', eval = F}
+{{{ q.correct_answer }}}
+```
+
+*** =hint
+
+{{{ q.hint }}}

@@ -1,0 +1,12 @@
+--- &radio
+
+{{{ q.output }}}
+
+{{# q.choices }}
+{{num}}. {{ options }}
+{{/ q.choices }}
+
+
+*** .hint
+
+{{ q.hint }}

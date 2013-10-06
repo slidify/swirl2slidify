@@ -1,0 +1,7 @@
+--- &submitcompare1
+
+{{{ q.output }}}
+
+*** .hint
+
+{{{ q.hint }}}

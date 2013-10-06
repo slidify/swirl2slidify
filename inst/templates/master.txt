@@ -1,0 +1,9 @@
+---
+title       : Swirl with Slidify
+author      : Ramnath Vaidyanathan
+hitheme     : solarized_light
+widgets     : [bootstrap, quiz, shiny, interactive]
+mode        : selfcontained
+
+{{{ slides }}}
+

@@ -1,0 +1,16 @@
+Package: swirlify
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2013-10-06
+Author: Ramnath Vaidyanathan
+Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
+Description: More about what it does (maybe more than one line)
+License: MIT
+Imports:
+  plyr,
+  whisker
+Collate:
+  qParse.R
+  utils.R
+  swirlify.R
