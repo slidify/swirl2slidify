@@ -7,11 +7,17 @@ getModule <- function(course, module){
   )
   mod_list = alply(mod, 1, as.list)
   attr(mod_list, 'split_labels') = NULL
-  return(mod_list)
+  
+  info = setNames(as.list(c(names(mod.info)[2], mod.info[-4,2])), 
+    c('instructor', 'course', 'module', 'packages')
+  )
+  info$packages = strsplit(info$packages, ",\\s*")[[1]]
+  list(mod = mod_list, info = info)
 }
 
+
 getTemplates <- function(){
-  tdir = system.file('templates', package = 'swirl')
+  tdir = system.file('templates', package = 'swirlify')
   tfiles = dir(tdir, full = T)
   tpls = lapply(tfiles, read_file_)
   names(tpls) = tools::file_path_sans_ext(basename(tfiles))

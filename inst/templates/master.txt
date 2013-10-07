@@ -1,9 +1,19 @@
 ---
-title       : Swirl with Slidify
-author      : Ramnath Vaidyanathan
+title       : {{{ info.course }}}
+subtitle    : {{{ info.module }}}
+author      : {{{ info.instructor }}}
 hitheme     : solarized_light
 widgets     : [bootstrap, quiz, shiny, interactive]
 mode        : selfcontained
+---
+
+## Load Packages
+
+```{r message = F, echo = F}
+{{# info.packages }}
+library({{.}})
+{{/ info.packages }}
+```
 
 {{{ slides }}}
 

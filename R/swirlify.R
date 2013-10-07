@@ -15,12 +15,12 @@ swirl2slidify <- function(course, module){
   module <- getModule(course, module)
   templates <- getTemplates()
   slides <- paste(
-    lapply(module, process_q, course = course, templates = templates),
+    lapply(module$mod, process_q, course = course, templates = templates),
     collapse = '\n\n'
   )
   deck <- render_template_(
     template = templates[['master']],
-    list(slides = slides)
+    list(slides = slides, info = module$info)
   )
   return(deck)
 }
