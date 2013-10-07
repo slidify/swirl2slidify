@@ -3,7 +3,7 @@
 
 [Swirl](https://github.com/ncarchedi/swirl) is an R package, that allows interactive statistics and R lessons to be delivered directly from the R console. Swirlify complements Swirl by allowing an author to convert a course module into interactive slides that can then be deployed over the web, or as an interactive Shiny application. 
 
-See a [demo](http://slidify.github.io/swirlifyDemo1) in action!
+See a [demo](http://slidify.github.io/swirlifyDemo) in action!
 
 ### Installation
 
